@@ -8,7 +8,14 @@ const fetchAllCategory = async () =>{
     );
     const data = await res.json();
     const categories = data.data.news_category;
-    console.log(categories);
+
+
+    categories.forEach(category =>{
+        newBtn = document.createElement("button");
+        newBtn.classList = 'btn'
+        newBtn.innerText = category.category_name;
+         findElementById("btn-container").appendChild(newBtn);
+    })
 }
 
 fetchAllCategory()
