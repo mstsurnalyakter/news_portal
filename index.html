@@ -20,30 +20,72 @@
       <nav class="py-5">
         <div class="navbar">
           <div class="flex-1">
-            <p class="flex gap-4 items-center"><button class="btn bg-[#5D5FEF] hover:bg-[#5D5FEF] text-white font-bold">News</button> <span>Portal</span></p>
-          </div>
-           <div class="flex gap-10">
-               <button class="underline text-[#5D5FEF]">News</button>
-              <button class="">News</button>
-            <div
-                tabindex="0"
-                role="button"
-                class="btn btn-ghost btn-circle avatar"
+            <p class="flex gap-4 items-center">
+              <button
+                class="btn bg-[#5D5FEF] hover:bg-[#5D5FEF] text-white font-bold"
               >
-                <div class="w-10 rounded-full">
-                  <img
-                    alt="Tailwind CSS Navbar component"
-                    src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-                  />
-                </div>
+                News
+              </button>
+              <span>Portal</span>
+            </p>
+          </div>
+          <div class="flex gap-10">
+            <button class="underline text-[#5D5FEF]">News</button>
+            <button class="">News</button>
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost btn-circle avatar"
+            >
+              <div class="w-10 rounded-full">
+                <img
+                  alt="Tailwind CSS Navbar component"
+                  src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                />
               </div>
-           </div>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
 
+    <!-- horizontal line -->
+
     <!-- main section -->
-    <main class="container mx-auto px-4 lg:px-24"></main>
+    <main class="container mx-auto px-4 lg:px-24">
+      <div class="border-t-2 border-[#CDCDCD] mb-14"></div>
+      <!-- category section -->
+      <section class="flex items-center justify-center mb-11">
+        <button class="btn">Breaking New</button>
+      </section>
+
+      <input
+        type="text"
+        placeholder="Type here"
+        class="input input-bordered w-full mb-11"
+      />
+
+      <!-- news container -->
+      <section>
+        <div>
+          <div class="card card-side bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+                alt="Movie"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">New movie is released!</h2>
+              <p>Click the button to watch on Jetflix app.</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Watch</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- footer section -->
     <footer></footer>
 
