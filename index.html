@@ -6,6 +6,11 @@
     <title>News Portal</title>
     <link rel="stylesheet" href="style.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
     <!-- daisy ui and tailwind css -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
@@ -55,33 +60,75 @@
     <main class="container mx-auto px-4 lg:px-24">
       <div class="border-t-2 border-[#CDCDCD] mb-14"></div>
       <!-- category section -->
-      <section id="btn-container" class="flex items-center justify-center flex-wrap gap-3 mb-11">
+      <section
+        id="btn-container"
+        class="flex items-center justify-center flex-wrap gap-3 mb-11"
+      >
         <!-- <button class="btn">Breaking New</button> -->
       </section>
 
-      <input
+     <section class="mb-11 grid grid-cols-5 gap-1">
+       <input
         type="text"
-        placeholder="Type here"
-        class="input input-bordered w-full mb-11"
+        placeholder="Search............"
+        class="input input-bordered w-full col-span-4"
       />
+      <button class="btn btn-primary">Search</button>
+     </section>
 
+      <!-- <div class="grid grid-cols-5 gap-3">
+        <div class="flex gap-3">
+          <figure>
+            <img class="w-12 rounded-full" src="" alt="" />
+          </figure>
+          <div>
+            <h3></h3>
+            <p></p>
+          </div>
+        </div>
+        <div>
+          <i class="fa-regular fa-eye"></i>
+          <span>1.4M</span>
+        </div>
+        <div>
+          <div class="rating rating-xs">
+            <input
+              type="radio"
+              name="rating-5"
+              class="mask mask-star-2 bg-orange-400"
+            />
+            <input
+              type="radio"
+              name="rating-5"
+              class="mask mask-star-2 bg-orange-400"
+              checked
+            />
+            <input
+              type="radio"
+              name="rating-5"
+              class="mask mask-star-2 bg-orange-400"
+            />
+            <input
+              type="radio"
+              name="rating-5"
+              class="mask mask-star-2 bg-orange-400"
+            />
+            <input
+              type="radio"
+              name="rating-5"
+              class="mask mask-star-2 bg-orange-400"
+            />
+          </div>
+        </div>
+        <div><i class="fa-solid fa-arrow-right"></i></div>
+      </div> -->
       <!-- news container -->
       <section>
-        <div>
-          <div class="card card-side bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
-                alt="Movie"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">New movie is released!</h2>
-              <p>Click the button to watch on Jetflix app.</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Watch</button>
-              </div>
-            </div>
+        <div  id="card-data-container" class="grid grid-cols-1 gap-4">
+          <div
+
+            class="card grid grid-cols-3 bg-base-100 shadow-xl"
+          >
           </div>
         </div>
       </section>
