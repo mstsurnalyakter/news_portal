@@ -27,6 +27,7 @@ const fetchAllCategory = async () =>{
     })
 }
 
+
 const fetchNewsCardData = async (id="01") =>{
   console.log(id);
     const res = await fetch(
